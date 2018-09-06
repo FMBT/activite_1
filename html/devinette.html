@@ -1,0 +1,58 @@
+ <!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jeu de devinette</title>
+</head>
+
+<body>
+	<h1>Jeu de devinette</h1>
+	<script type="text/javascript">
+    
+
+    	
+
+
+		/*// Cette ligne génère aléatoirement un nombre entre 1 et 100
+		console.log("Bienvenue dans ce jeu de devinette !");
+		var solution = Math.floor(Math.random() * 100) + 1;
+		var nombre = Number(prompt("Entrez un nombre :"));
+		 
+		// Décommentez temporairement cette ligne pour mieux vérifier le programme
+		console.log("(La solution est " + solution + ")");*/
+
+		console.log("Bienvenue dans ce jeu de devinette !");
+ 
+// Cette ligne génère aléatoirement un nombre entre 1 et 100
+var solution = Math.floor(Math.random() * 100) + 1;
+ 
+// TODO : complétez le programme
+var proposition = parseInt(prompt("Entrez un nombre :"));
+for (var vie=0; vie < 6; vie++)
+    {
+        if (proposition == solution)
+            {
+                console.log("Bravo, vous avez gagné. La solution était "+solution);
+                break;
+            }
+            if(proposition > solution)
+            {
+					console.log('Eupena mo gui tourou');
+            }
+            else
+            {
+					console.log('Yokkal way nay ngua trope');
+            }
+            if(vie===6)
+            {
+					console.log('Pan! Pan! Pan! Sey Ball diekhna dokhil fowii');            	
+            }
+    }
+
+		 
+		
+    </script>
+</body>
+
+</html>
